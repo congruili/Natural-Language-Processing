@@ -80,7 +80,7 @@ public class HMM {
 //        }
 
         System.out.println("Baseline approach: ");
-        System.out.println("(for each token, the word followed by the true tag, then followed by the predicted tag)");
+        System.out.println("(for each token, word/true tag/predicted tag)");
         File f2 = new File("test.txt");
         int correct = 0, totalTokens = 0;
         try (BufferedReader br2 = new BufferedReader(new FileReader(f2))) {
@@ -118,7 +118,7 @@ public class HMM {
 
 
         System.out.println("\n\nHMM approach: ");
-        System.out.println("(for each token, the word followed by the true tag, then followed by the predicted tag)");
+        System.out.println("(for each token, word/true tag/predicted tag)");
         File f3 = new File("test.txt");
         correct = 0;
         totalTokens = 0;
