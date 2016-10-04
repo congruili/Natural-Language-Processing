@@ -31,6 +31,6 @@ Pappy Bush, who was the president at the time, claimed that he had won the cold 
         :ARG1 (e / event 
             :wiki "Cold_War"
             :name (n2 / name :op1 "cold" :op2 "war")))
-        :cause (h / happen
-            :ARG0 (c / collapse)
-                :ARG0-of (c1 / country :wiki "Soviet_Union" :name (n3 / name :op1 "Soviet" :op2 "Union"))))
+        :cause (h2 / happen
+            :ARG0 (c2 / collapse)
+                :ARG0-of (c3 / country :wiki "Soviet_Union" :name (n3 / name :op1 "Soviet" :op2 "Union"))))
