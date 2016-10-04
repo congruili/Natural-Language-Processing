@@ -1,0 +1,36 @@
+I was in Guatemala when the CIA was preparing its attack on President Arbenz of Guatemala, 1954.
+
+(i / i
+    :location (c / country :wiki "Guatemala" :name (n / name :op1 "Guatemala"))
+    :time (p / prepare
+               :ARG0 (g / government-organization :wiki "Central_Intelligence_Agency" :name (n2 / name :op1 "CIA"))
+               :ARG1 (a / attack)
+                   :poss g
+                   :ARG1 (p2 / person 
+                              :wiki "Jacobo_Árbenz"
+                              :name (n3 / name :op1 "Arbenz")
+                              :ARG0-of (h / have-org-role-91
+                                  :ARG1 c
+                                  :ARG2 (p3 / president)))
+               :time (d / date-entity :year 1954)))
+
+
+
+Pappy Bush, who was the president at the time, claimed that he had won the cold war since the collapse of the Soviet Union happened on his watch.
+
+
+(c / claim
+    :ARG0 (p / person 
+               :wiki "George_H._W._Bush"
+               :name (n / name :op1 "Pappy" :op2 "Bush")
+               :time (:ARG0-of (h / have-org-role-91)
+                          :ARG0 p
+                          :ARG1 (p2 / president)))
+    :ARG1 (w / win
+        :ARG0 p
+        :ARG1 (e / event 
+            :wiki "Cold_War"
+            :name (n2 / name :op1 "cold" :op2 "war")))
+        :cause (h / happen
+            :ARG0 (c / collapse)
+                :ARG0-of (c1 / country :wiki "Soviet_Union" :name (n3 / name :op1 "Soviet" :op2 "Union"))))
