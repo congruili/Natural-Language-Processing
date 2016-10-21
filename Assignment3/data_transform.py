@@ -22,8 +22,7 @@ DAYS = ['monday', 'tuesday', 'wednesday', 'thursday',
 MONTHS = ['january', 'february', 'march', 'april', 'may', 'june', 'july',
           'august', 'september', 'october', 'november', 'december',
           'jan', 'feb', 'mar', 'apr', 'jun', 'jul', 'aug', 'sep', 'sept',
-          'oct', 'nov', 'dec']
-  
+          'oct', 'nov', 'dec']  
   
 NAMES = set([name.lower() for filename in ('male.txt', 'female.txt') for name
              in names.words(filename)])
@@ -397,13 +396,9 @@ def main(argv):
     outfile = open(argv[3], 'w+')
     if (len(argv) == 6): 
         test_features = open(argv[4], 'w+')
-        test_token = open(argv[5], 'w+')
-
+        test_token = open(argv[5], 'w+')        
 
     for line in infile:
-        # if line == ' *':
-        #     outfile.write("\n")
-        # else:
         strs = string.split(line)
         size = len(strs)
         if size == 0: 
@@ -417,8 +412,7 @@ def main(argv):
                 word = strs[0]
             else:
                 word = " ".join(strs[0: size - 1])
-                # print(word)
-                # print(line)
+
             if (mode == "test"):                
                 test_token.write(word + "\n")
 
@@ -438,9 +432,9 @@ def main(argv):
             if (mode == "test"):
                 outfile.write(word + " " + label + "\n")
 
-
     outfile.close()
     infile.close()
+
 
 if __name__ == "__main__":
     main(sys.argv)
