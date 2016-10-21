@@ -1,10 +1,10 @@
 Original data is in the `English_data` folder.
 
-Features generated for each token:
-+ Gazetteers. Value: PERSON; ORG; LOCATION; O (None of the above).
-+ Case of first letter. Value: CAPITALIZED; LOWERCASE.
+### Features generated for each token:
++ **Gazetteers**. value: PERSON; ORG; LOCATION; O (None of the above).
++ **Case of first letter**. value: CAPITALIZED; LOWERCASE.
 
-Step by step:
+### Step by step:
 
 Convert the original training data into the right format for the [SimpleTagger](http://mallet.cs.umass.edu/sequences.php) API, also add features to the training data (each line of `train_features_label` contains a token, features of the token and the true label):<br />
 ```
@@ -21,7 +21,7 @@ Train the CRF model using the training data (documentation of the SimpleTagger A
 $ java –cp "/Users/Baymax/Desktop/NLP/Assignment3/mallet/class:/Users/Baymax/Desktop/NLP/Assignment3/mallet/lib/mallet-deps.jar" cc.mallet.fst.SimpleTagger --train true --model-file crf --threads 8 train_features_label
 ```
 
-Used the CRF model and the generated features to predict labels for the test data (the predicted labels are saved in a file called `predict_label`):<br />
+Use the CRF model and the generated features to predict labels for the test data (the predicted labels are saved in a file called `predict_label`):<br />
 ```
 $ java -cp "/Users/Baymax/Desktop/NLP/Assignment3/mallet/class:/Users/Baymax/Desktop/NLP/Assignment3/mallet/lib/mallet-deps.jar" cc.mallet.fst.SimpleTagger --model-file crf test_features > predict_label
 ```
