@@ -24,4 +24,4 @@ Sentiment analysis was conducted on the sentence level. Each comment may have mu
 {'neg': 0.0, 'neu': 0.49, 'pos': 0.51, 'compound': 0.8065}
 ```
 Ignoring the ``'compound'`` score, the sum of ``'pos'``, ``'neg'``, and ``'neu'`` scores always equals to 1.0. The threshold I used is:</br>
-If the difference between ``'pos'`` and ``'neg'`` scores is at least 0.1, the sentiment tag for this sentence would be the large one of ``'pos'`` and ``'neg'``. Otherwise, it either means the ``'pos'`` and ``'neg'`` scores are too close or both of them are too small, then the sentiment tag for this sentence would be ``'neu'``.
+If the difference between ``'pos'`` and ``'neg'`` scores is at least 0.1, the sentiment tag for this sentence would be the larger one of ``'pos'`` and ``'neg'``. Otherwise, it means either the ``'pos'`` and ``'neg'`` scores are too close or both of them are too small, then the sentiment tag for this sentence would be ``'neu'``.
