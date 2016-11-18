@@ -2,6 +2,7 @@ import json
 from sets import Set
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import os
+
 curt_dir = os.getcwd()
 target_dir = curt_dir + '/The First Presidential Debate/comments/'
 
@@ -55,7 +56,3 @@ print '\nSentiment distribution for Hillary Clinton: '
 print hillary_stats
 print '\nSentiment distribution for Donald Trump: '
 print donald_stats
-
-
-
-
