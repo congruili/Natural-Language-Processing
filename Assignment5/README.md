@@ -1,6 +1,8 @@
+To help you understand the hierarchical structure of the JSON data, one online JSON parser tool is available [here]( http://jsonparseronline.com/).
+
 ``nltk.sentiment.vader`` API was used for sentiment analysis. 
-* Documentation is available [here]( http://www.nltk.org/howto/sentiment.html). 
-* Source code is available [here]( http://www.nltk.org/_modules/nltk/sentiment/vader.html).
+* Documentation of the API is available [here]( http://www.nltk.org/howto/sentiment.html). 
+* Source code of the API is available [here]( http://www.nltk.org/_modules/nltk/sentiment/vader.html).
 
 std output of ``hw5.py``:
 
